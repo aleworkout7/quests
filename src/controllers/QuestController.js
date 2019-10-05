@@ -8,11 +8,12 @@ module.exports = {
     },
 
     async store(req, res){
-        const { name, actived } = req.body;
+        const { name, point, actived } = req.body;
         
         const quest = await Quest.create({
             name,
             actived,
+            point,
         });
 
         return res.json(quest);

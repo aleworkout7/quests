@@ -5,6 +5,10 @@ const QuestSchema = new Schema({
         type: String,
         required: true,
     },
+    point: {
+        type: Number,
+        required: true,
+    },
     actived: {
         type: Boolean,
         required: true,
